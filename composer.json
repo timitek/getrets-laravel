@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Timitek\\GetRETS\\": "src"
+            "Timitek\\GetRETS\\": "app/"
         }
     },
     "autoload-dev": {
