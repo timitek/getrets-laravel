@@ -1,0 +1,51 @@
+{
+    "name": "timitek/getrets-laravel",
+    "type": "library",
+    "description": "A laravel package for the GetRETS API from timitek (http://www.timitek.com).  GetRETS is a product / service developed by timitek that makes it possible to quickly build real estate related applications for pulling listing data from several MLS's without having to know anything about RETS or IDX or worry about the pains of mapping and storing listing data from these various sources.",
+    "keywords": [
+        "Timitek",
+        "GetRETS"
+    ],
+    "homepage": "https://github.com/timitek/getrets-laravel",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "timitek, llc",
+            "email": "support@timitek.com",
+            "homepage": "http://www.timitek.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.6|~7.0",
+        "timitek/getrets": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Timitek\\GetRETS\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Timitek\\GetRETS\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
