@@ -5,7 +5,7 @@ Home
     <div class="jumbotron">
         <h1>GetRETS&reg; Laravel Example</h1>
         <p>@lang('GetRETS::messages.welcome')</p>
-        <p><a href="https://github.com/timitek/getrets-php-sdk" target="_blank" class="btn btn-primary btn-lg" role="button">Download &darr;</a></p>
+        <p><a href="https://github.com/timitek/getrets-laravel" target="_blank" class="btn btn-primary btn-lg" role="button">Download &darr;</a></p>
     </div>
     <div class="row">
         <div class="col-xs-12">

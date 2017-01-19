@@ -4,7 +4,7 @@
     "description": "A laravel package for the GetRETS API from timitek (http://www.timitek.com).  GetRETS is a product / service developed by timitek that makes it possible to quickly build real estate related applications for pulling listing data from several MLS's without having to know anything about RETS or IDX or worry about the pains of mapping and storing listing data from these various sources.",
     "keywords": ["laravel", "RETS", "IDX", "Realty", "Real Estate"],
     "homepage": "https://github.com/timitek/getrets-laravel",
-    "license": "GPL-3.0",
+    "license": "MIT",
     "authors": [
         {
             "name": "timitek, llc",
