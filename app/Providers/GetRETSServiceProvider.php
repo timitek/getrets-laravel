@@ -7,6 +7,8 @@ use Config;
 use Illuminate\Support\ServiceProvider;
 use Lang;
 use Timitek\GetRETS\GetRETS;
+use Timitek\GetRETS\Facades\GetRETSFacade;
+use Illuminate\Foundation\AliasLoader;
 
 class GetRETSServiceProvider extends ServiceProvider
 {
@@ -21,6 +23,9 @@ class GetRETSServiceProvider extends ServiceProvider
             return new GetRETS(config('getrets.customer_key'));
         });
 
+        $loader = AliasLoader::getInstance();
+
+        $loader->alias('GetRETS', GetRETSFacade::class);
     }
 
     /**
@@ -30,7 +35,9 @@ class GetRETSServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadRoutesFrom(realpath(__DIR__.'/../../routes/web.php'));
+        if (config('getrets.enable_example')) {
+            $this->loadRoutesFrom(realpath(__DIR__.'/../../routes/web.php'));
+        }
 
         $this->loadTranslationsFrom(realpath(__DIR__.'/../../resources/lang'), 'GetRETS');
         $this->publishes([realpath(__DIR__.'/../../resources/lang') => resource_path('lang/vendor/timitek')], 'translations');
