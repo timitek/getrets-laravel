@@ -15,8 +15,7 @@
     ],
     "support": {
         "email": "support@timitek.com",
-        "source": "https://github.com/timitek/getrets-php-sdk",
-        "docs": "https://github.com/timitek/getrets-php-sdk/tree/master/docs"
+        "source": "https://github.com/timitek/getrets-laravel"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
