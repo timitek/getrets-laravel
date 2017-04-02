@@ -37,7 +37,7 @@ Based on the PHP SDK found at (<https://github.com/timitek/getrets-php-sdk>).
 
 ## Install
 
-To add to an existing Laravel 5.3 application run the following command.
+To add to an existing Laravel 5.4 application run the following command.
 
 ```
 composer require timitek/getrets-laravel
