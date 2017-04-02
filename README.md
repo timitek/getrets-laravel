@@ -49,12 +49,6 @@ Add the following to your providers in config/app.php
 Timitek\GetRETS\Providers\GetRETSServiceProvider::class,
 ```
 
-Add the following to your aliases in config/app.php
-
-```php
-'GetRETS' => Timitek\GetRETS\Facades\GetRETS::class,
-```
-
 Publish the config file to config/getrets.php with the following command.
 
 ```
@@ -75,6 +69,12 @@ php artisan serve
 
 <http://localhost:8000/getrets/example>
 
+
+To disable the sampe code set the GETRETS_ENABLE_EXAMPLE to false in your .env file.
+
+```
+GETRETS_ENABLE_EXAMPLE=false
+```
 
 ***
 
