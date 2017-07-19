@@ -51,7 +51,7 @@ class ExampleController extends Controller {
         else if ($this->isAction($request, "search")) {
             $data["listings"] = $this->listingController($data)
                     ->setSortBy($data["sortBy"])->setReverseSort($data["reverseSort"])
-                    ->search($data["keywords"], $data["maxPrice"], $data["minPrice"], $data["includeResidential"], $data["includeLand"], $data["includeCommercial"]);
+                    ->search($data["keywords"], $data["extra"], $data["maxPrice"], $data["minPrice"], $data["beds"], $data["baths"], $data["includeResidential"], $data["includeLand"], $data["includeCommercial"]);
         }
         // Return Listings by DMQL
         else if ($this->isAction($request, "getListingsByDMQL")) {
@@ -84,8 +84,11 @@ class ExampleController extends Controller {
             "isPublic" => ExampleController::IS_PUBLIC,
             "disableCache" => !empty($request->disableCache),
             "keywords" => $request->keywords ? : ExampleController::EXAMPLE_ADDRESS,
+            "extra" => $request->extra,
             "maxPrice" => $request->maxPrice,
             "minPrice" => $request->minPrice,
+            "beds" => $request->beds,
+            "baths" => $request->baths,
             "includeResidential" => $request->includeResidential,
             "includeLand" => $request->includeLand,
             "includeCommercial" => $request->includeCommercial,

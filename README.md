@@ -145,7 +145,7 @@ An array of **CondensedListing**'s
 [Swagger Documentation](http://getrets.net/swagger/ui/index#!/Listing/Listing_Search "")
 
 ```php
-GetRETS::getListing()->search($keywords, $maxPrice, $minPrice, $includeResidential, $includeLand, $includeCommercial);
+GetRETS::getListing()->search($keywords, $extra, $maxPrice, $minPrice, $beds, $baths, $includeResidential, $includeLand, $includeCommercial);
 ```
 A more advanced search that retrieves listings constrained by the optional parameters.
 
@@ -153,9 +153,15 @@ A more advanced search that retrieves listings constrained by the optional param
 
 ***keyword*** - Keywords to search on
 
+***extra*** - *(optional)* Comma seperated list of extra terms to search for (golf, lake, etc...)
+
 ***maxPrice*** - *(optional)* The maximum listing price
 
 ***minPrice*** - *(optional)* The minimum listing price
+
+***beds*** - *(optional)* The minimum number of beds to require
+
+***baths*** - *(optional)* The minimum number of baths to require
 
 ***includeResidential*** - *(optional)* Include residential listings
 
@@ -343,7 +349,7 @@ An array of **CondensedListing**'s
 [Swagger Documentation](http://getrets.net/swagger/ui/index#!/Listing/Listing_Search "")
 
 ```php
-GetRETS::getRETSListing()->search($keywords, $maxPrice, $minPrice, $includeResidential, $includeLand, $includeCommercial);
+GetRETS::getRETSListing()->search($keywords, $extra, $maxPrice, $minPrice, $beds, $baths, $includeResidential, $includeLand, $includeCommercial);
 ```
 A more advanced search that retrieves listings constrained by the optional parameters.
 
@@ -351,9 +357,15 @@ A more advanced search that retrieves listings constrained by the optional param
 
 ***keyword*** - Keywords to search on
 
+***extra*** - *(optional)* Comma seperated list of extra terms to search for (golf, lake, etc...)
+
 ***maxPrice*** - *(optional)* The maximum listing price
 
 ***minPrice*** - *(optional)* The minimum listing price
+
+***beds*** - *(optional)* The minimum number of beds to require
+
+***baths*** - *(optional)* The minimum number of baths to require
 
 ***includeResidential*** - *(optional)* Include residential listings
 
