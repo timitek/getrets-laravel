@@ -25,7 +25,7 @@ search
             </div>
             <div class="form-group">
                 <label for="extra">Extra</label>
-                <input class="form-control" id="extra" name="extra" placeholder="Enter comma seperated list of extra terms to search for (golf, lake, etc..)" value="<?= $extra ?>">
+                <input class="form-control" id="extra" name="extra" placeholder="Enter comma seperated list of extra terms to search for (golf, lake, etc..)" value="{{ $extra }}">
             </div>
             <div class="form-group">
                 <label for="maxPrice">Max Price</label>
