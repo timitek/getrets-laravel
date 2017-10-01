@@ -11,7 +11,9 @@ Based on the PHP SDK found at (<https://github.com/timitek/getrets-php-sdk>).
 ***
 
 # Table of Contents
-* [How To Use](#how-to-use)
+* [Setup](#setup)
+  * [Compatibility Guide](#compatibility-guide)
+  * [Install](#install)
 * [Listing](#listing)
   * [searchByKeyword](#searchbykeyword)
   * [search](#search)
@@ -33,21 +35,28 @@ Based on the PHP SDK found at (<https://github.com/timitek/getrets-php-sdk>).
 
 ***
 
-# How To Use
+# Setup
+
+## Compatibility Guide
+
+| Laravel Version | Package Tag |
+|-----------------|-------------|
+| 5.5.x | 1.1.x |
+| 5.4.x | [1.0.x](<https://github.com/timitek/getrets-laravel/tree/1.0.5>) |
 
 ## Install
 
-To add to an existing Laravel 5.4 application run the following command.
+To add to an existing Laravel application run the following command.
 
 ```
 composer require timitek/getrets-laravel
 ```
 
-Add the following to your providers in config/app.php
+**Note**: *For Laravel 5.4 and older it is necessary to add the following to the providers section within config/app.php.*
 
 ```php
 Timitek\GetRETS\Providers\GetRETSServiceProvider::class,
-```
+``` 
 
 Publish the config file to config/getrets.php with the following command.
 
