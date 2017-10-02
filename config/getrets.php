@@ -23,6 +23,6 @@ return [
     |
     */
 
-    'enable_example' => env('GETRETS_ENABLE_EXAMPLE', true),
+    'enable_example' => env('GETRETS_ENABLE_EXAMPLE', false),
 
 ];

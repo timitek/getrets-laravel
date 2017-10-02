@@ -14,6 +14,7 @@ Based on the PHP SDK found at (<https://github.com/timitek/getrets-php-sdk>).
 * [Setup](#setup)
   * [Compatibility Guide](#compatibility-guide)
   * [Install](#install)
+  * [View Example Pages](#view-example-pages)
 * [Listing](#listing)
   * [searchByKeyword](#searchbykeyword)
   * [search](#search)
@@ -70,11 +71,25 @@ You may now add the customer key provided to you by timitek.com by either modify
 GETRETS_CUSTOMER_KEY=your_customer_key_from_timitek
 ```
 
-To test the installation, start the project and browse to /getrets/example.
+## View Example Pages
+
+A sample [controller](<https://github.com/timitek/getrets-laravel/blob/master/app/Http/Controllers/ExampleController.php>) and [view](<https://github.com/timitek/getrets-laravel/tree/master/resources/views/example>) have been provided to help you get started.
+
+To test the installation enable the examples, start the project, and browse to /getrets/example.
+
+To enable the sampe code set the GETRETS_ENABLE_EXAMPLE to true in your .env file.
+
+```
+GETRETS_ENABLE_EXAMPLE=true
+```
+
+Serve the application on the PHP development server by running;
 
 ```
 php artisan serve
 ```
+
+View the project examples by browsing too
 
 <http://localhost:8000/getrets/example>
 
